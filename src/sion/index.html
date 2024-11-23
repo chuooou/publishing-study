@@ -19,13 +19,80 @@
     <link href="/src/sion/index.css" rel="stylesheet" />
   </head>
   <body class="flex flex-col">
-    <header class="flex">
-      <h1><img src="https://cimgcdn.ybtour.co.kr/common/logo/logo_l.png" /></h1>
-      <div class="flex items-center border-[2px] rounded-[3rem] px-[2.5rem] py-[2rem]">
-        <a href="https://pkg.ybtour.co.kr/common/searchGoods.yb">여행 떠나고, 금테크 하자!</a>
-        <button
-          class="bg-[url('https://cimgcdn.ybtour.co.kr/common/button/btn_search.png')] bg-no-repeat"></button>
+    <header class="flex flex-col border-b border-black">
+      <nav class="h-[3rem]">
+        <ul
+          class="flex justify-end items-center h-full gap-[2rem] bg-[#f3f3f3] text-[#555] text-[1.3rem]">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">예약확인/결제</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex pt-[2rem] pb-[1rem]">
+        <h1><img src="https://cimgcdn.ybtour.co.kr/common/logo/logo_l.png" /></h1>
+        <div
+          class="flex items-center border-[2px] rounded-[3rem] px-[2.5rem] py-[2rem] border-[#ffcb31]">
+          <a href="#" class="text-[#999]">여행 떠나고, 금테크 하자!</a>
+          <button
+            class="bg-[url('https://cimgcdn.ybtour.co.kr/common/button/btn_search.png')] bg-no-repeat" />
+        </div>
+
+        <div class="flex"></div>
       </div>
+
+      <nav class="flex">
+        <ul
+          class="flex [&_a]:block [&_a:hover]:font-bold [&_a]:px-[2rem] [&_a]:py-[1.5rem] text-[#555] text-[1.7rem] [&_li]:block">
+          <li><a href="#">해외패키지</a></li>
+          <li><a href="#">에어텔</a></li>
+          <li><a href="#">허니문</a></li>
+          <li><a href="#">골프</a></li>
+          <li><a href="#">테마/크루즈</a></li>
+          <li><a href="#">프리미엄</a></li>
+          <li><a href="#">국내여행</a></li>
+          <li><a href="#">항공</a></li>
+          <li><a href="#">호텔</a></li>
+          <li><a href="#">투어&티켓</a></li>
+          <li><a href="#">렌터카</a></li>
+          <li><a href="#">기업/단체</a></li>
+        </ul>
+      </nav>
     </header>
+    <main>
+      <section>as</section>
+    </main>
+    <footer>
+      <nav class="flex justify-center border-t border-b border-[#ddd] bg-[#f5f5f5]">
+        <ul
+          class="flex gap-[3rem] [&_li]:text-[1.5rem] [&_li]:text-[#111] [&_li]:font-medium [&_li]:py-[1.8rem]">
+          <li><a href="#">고객후기</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">자주하는 질문</a></li>
+          <li><a href="#">무이자할부</a></li>
+          <li><a href="#">1:1문의</a></li>
+          <li><a href="#">견적 문의</a></li>
+          <li><a href="#">여행후기</a></li>
+          <li><a href="#">칭찬합시다</a></li>
+        </ul>
+      </nav>
+      <section class="flex divide-x divide-[#777] text-[#777] text-[1.2rem] [&_address]:not-italic">
+        <div class="flex-grow">
+          <address class="flex">
+            <p class="after:content-['_|'] after:mx-2">대표이사 김진국</p>
+            <p>서울특별시 중구 수표로31, 노랑풍선빌딩</p>
+          </address>
+          <dl>
+            <dt>사업자등록번호</dt>
+            <dd>104-81-64440</dd>
+          </dl>
+        </div>
+        <div class="pl-[4rem]">
+          <address>대표이사 김진국서울특별시 중구 수표로31, 노랑풍선빌딩</address>
+        </div>
+      </section>
+      <nav></nav>
+    </footer>
   </body>
 </html>
