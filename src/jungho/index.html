@@ -3,12 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>노랑풍선 [여행을 가볍게]</title>
     <link href="/src/css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="images/faviconV2.png">
   </head>
   <body>
-    <div class="flex">
-      <p class="text-black font-bold">화이팅!</p>
-    </div>
+    <header>
+      <div id="banner" class="relative">
+        <img src="https://scdn.ybtour.co.kr/banner/common/202410310444054702304013001092.jpg" alt="banner">
+        <button type="button" 
+          class="absolute w-[2.5rem] h-[2.5rem] right-4 top-6
+            before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:w-[0.1rem] before:h-full before:bg-gray-700 before:-translate-x-1/2 before:-translate-y-1/2 before:rotate-45
+            after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[0.1rem] after:h-full after:bg-gray-700 after:-translate-x-1/2 after:-translate-y-1/2 after:-rotate-45">
+            <span class="sr-only">배너 닫기</span>
+        </button>
+      </div>
+      <ul class="flex justify-end gap-[2rem] bg-gray-100">
+        <li class="text-[1.3rem]">
+          <a href="https://account.ybtour.co.kr/signIn?channelCode=011">로그인</a>
+        </li>
+        <li class="text-[1.3rem]">
+          <a href="https://account.ybtour.co.kr/signUp/intro">회원가입</a>
+        </li>
+        <li class="text-[1.3rem]"> 
+          <a href="https://account.ybtour.co.kr/signIn?channelCode=011">예약확인/결제</a>
+        </li>
+        <li class="text-[1.3rem]">
+          <a href="https://pkg.ybtour.co.kr/cs/main.yb">고객센터</a>
+        </li>
+      </ul>
+      <section>
+        <h1>
+          <img src="https://cimgcdn.ybtour.co.kr/common/logo/logo_l.png" alt="노랑풍선 로고">
+        </h1>
+        <button >
+            <a href="https://pkg.ybtour.co.kr/common/searchGoods.yb">
+                <img src="https://cimgcdn.ybtour.co.kr/common/button/btn_search.png" alt="검색">
+            </a>
+        </button>
+        <section class="flex gap-[4rem]">
+          <ul class="flex text-[1.7rem] gap-[1.3rem]">
+            <li class="relative after:content-[''] after:absolute after:right-0 after:top-1/3 after:inline-block after:w-[3px] after:h-[3px] after:bg-gray-300 after:-translate-y-1/2">베스트</li>
+            <li>긴급특가</li>
+            <li>출발확정</li>
+            <li>얼리버드</li>
+            <li>옐로LIVE</li>
+          </ul>
+          <div class="flex">
+            <a href="https://account.ybtour.co.kr/signIn?channelCode=011&returnUrl=https%3A%2F%2Fpkg.ybtour.co.kr%2Fmypage%2Findex.yb">
+              <img src="https://cimgcdn.ybtour.co.kr/common/button/ico_mypage.png" alt="마이페이지"
+                class="after:content-['마이페이지'] after:sr-only">
+            </a>
+            <a href="#">
+              <img src="https://cimgcdn.ybtour.co.kr/common/button/ico_recent.png" alt="최근본상품"
+                class="after:content-['최근본상품'] after:sr-only">
+            </a>
+          </div>
+        </section>
+      </section>
+      <nav></nav>
+    </header>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
+
+
+<!-- sr-only : 화면에서 보이지 않지만 읽어주는 사람에게는 보여주는 요소 -->
+<!-- before:content-[''] : 가상요소에 텍스트 추가 -->
