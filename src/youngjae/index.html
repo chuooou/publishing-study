@@ -1,18 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="/src/css/output.css" rel="stylesheet" />
+    <title>노랑풍선 [여행을 가볍게]</title>
+    <link href="../css/output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="flex">
-      <p class="text-black">hi</p>
-      <p class="text-red-500">hi</p>
-      <p class="text-red-500">hi</p>
-      <p class="text-red-500">hi</p>
-      <p class="text-red-500">hi</p>
-    </div>
+    <header class="border-b border-black">
+      <div class="bg-[#DAE6F6]">
+        <a class="block mx-auto w-[1200px] relative" href="#">
+          <img
+            src="https://scdn.ybtour.co.kr/banner/common/202410310444054702304013001092.jpg"
+            alt="배너 이미지"
+            class="overflow-clip mx-auto"
+            width="1200px"
+            height="70px"
+          />
+          <button class="banner-close">
+            <span class="sr-only">배너 닫기</span>
+          </button>
+        </a>
+      </div>
+      <nav class="bg-[#f3f3f3]" aria-labelledby="top-nav">
+        <ul
+          class="flex gap-[20px] justify-end leading-[30px] text-[13px] w-[1200px] mx-auto text-[#555555] [&>li]:cursor-pointer"
+        >
+          <li><a>로그인</a></li>
+          <li><a>회원가입</a></li>
+          <li><a>예약확인/결제</a></li>
+          <li><a>고객센터</a></li>
+        </ul>
+      </nav>
+      <div
+        class="flex items-center justify-between pt-[20px] pb-[10px] w-[1200px] mx-auto"
+      >
+        <div class="flex items-center gap-[30px]">
+          <h1 class="text-[32px] font-bold">
+            <a href="/">
+              <img
+                src="https://cimgcdn.ybtour.co.kr/common/logo/logo_l.png"
+                alt="노랑풍선"
+                width="165px"
+                height="44px"
+              />
+              <span class="sr-only">노랑풍선</span>
+            </a>
+          </h1>
+          <div class="relative w-[340px] h-[46px]">
+            <input
+              type="text"
+              placeholder="여행 떠나고, 금테크 하자!"
+              class="w-full h-[50px] px-[20px] border-2 border-[#ffcb31] rounded-[30px] text-[15px]"
+            />
+            <button class="absolute right-[20px] top-1/2 -translate-y-1/2">
+              <span class="sr-only">검색</span>
+              <img
+                src="https://cimgcdn.ybtour.co.kr/common/button/btn_search.png"
+                alt="검색"
+              />
+            </button>
+          </div>
+        </div>
+        <nav class="flex items-center gap-[40px]" aria-labelledby="utility-nav">
+          <ul
+            class="flex items-center [&>li]:relative [&>li]:pr-[13px] [&>li]:mr-[10px] [&_a]:text-[#111] [&_a]:text-[17px]"
+          >
+            <li>
+              <a
+                href="#"
+                class="after:content-[''] after:absolute after:right-0 after:top-[50%] after:inline-block after:w-[3px] after:h-[3px] after:bg-[#ccc] after:-translate-y-0.5 after:cursor-default"
+              >
+                베스트
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="after:content-[''] after:absolute after:right-0 after:top-[50%] after:inline-block after:w-[3px] after:h-[3px] after:bg-[#ccc] after:-translate-y-0.5 after:cursor-default"
+              >
+                긴급특가
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="after:content-[''] after:absolute after:right-0 after:top-[50%] after:inline-block after:w-[3px] after:h-[3px] after:bg-[#ccc] after:-translate-y-0.5 after:cursor-default"
+              >
+                출발확정
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="after:content-[''] after:absolute after:right-0 after:top-[50%] after:inline-block after:w-[3px] after:h-[3px] after:bg-[#ccc] after:-translate-y-0.5 after:cursor-default"
+              >
+                얼리버드
+              </a>
+            </li>
+            <li>
+              <a href="#"> 옐로LIVE </a>
+            </li>
+          </ul>
+          <div class="flex gap-[10px]">
+            <a href="#">
+              <img
+                src="https://cimgcdn.ybtour.co.kr/common/button/ico_mypage.png"
+                alt="마이페이지"
+                width="36px"
+                height="36px"
+              />
+              <span class="sr-only">마이페이지</span>
+            </a>
+            <a href="#">
+              <img
+                src="https://cimgcdn.ybtour.co.kr/common/button/ico_recent.png"
+                alt="최근본상품"
+                width="36px"
+                height="36px"
+              />
+              <span class="sr-only">최근본상품</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <nav aria-labelledby="category-nav" class="mx-auto w-[1200px]">
+        <ul
+          class="flex [&_a]:cursor-pointer [&>li>a]:pr-[30px] [&>li>a]:py-[20px] [&>li>a]:block [&>li>a]:text-[17px] [&>li>a]:text-[#555] [&>li>a]:leading-[1] [&>li]:box-content"
+        >
+          <li class="group relative">
+            <a href="#">해외패키지</a>
+            <div
+              class="invisible group-hover:visible bg-white absolute top-[calc(100%+1px)] left-0 w-[100dvw]"
+            >
+              <ul
+                class="flex items-center gap-[20px] [&_a]:h-[50px] [&_a]:p-0 [&_a]:border-b-2 [&_a]:border-b-transparent hover:[&_a]:border-b-[black] [&_a]:cursor-pointer [&_a]:text-[15px] [&_a]:text-[#555] [&_a]:flex [&_a]:items-center"
+              >
+                <li class="group/sub relative">
+                  <a href="#">유럽</a>
+                  <div
+                    class="invisible group-hover/sub:visible absolute left-0 top-[calc(100%+1px)]"
+                  >
+                    <div class="bg-[#f5f5f5] p-[30px]">
+                      <h3 class="font-bold">지역 [해외패키지] 유럽</h3>
+                      <ul>
+                        <li><a href="#">서유럽</a></li>
+                        <li><a href="#">동유럽</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="group/sub">
+                  <a href="#" aria-expanded="false" aria-controls="asia-detail"
+                    >동남아</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#"> 에어텔 </a></li>
+          <li>
+            <a href="#"> 허니문 </a>
+          </li>
+        </ul>
+        <div
+          class="invisible absolute group-hover:visible flex justify-between w-[1200px]"
+        >
+          <ul
+            class="flex gap-[20px] [&>li]:border-b-2 [&>li]:border-b-transparent hover:[&>li]:border-b-[black] [&>li]:cursor-pointer [&>li]:h-[50px] [&>li]:text-[15px] [&>li]:text-[#555] [&>li]:flex [&>li]:items-center"
+          >
+            <li>유럽</li>
+            <li>동남아</li>
+            <li>일본</li>
+            <li>괌/사이판</li>
+            <li>호주/뉴질랜드</li>
+            <li>미주/캐나다/하와이</li>
+            <li>중남미/아프리카</li>
+            <li>대만/홍콩/마카오</li>
+            <li>중국/몽골</li>
+            <li>부산/지방</li>
+            <li>출발</li>
+          </ul>
+          <ul
+            class="flex gap-[15px] [&>li]:border-b-transparent text-[#555] text-[14px] [&>li]:flex [&>li]:items-center [&>li]:cursor-pointer group"
+          >
+            <li>기획전</li>
+            <li>이벤트</li>
+            <li>홈쇼핑</li>
+          </ul>
+          <div class="invisible absolute group-hover:visible w-full">
+            안녕하세요
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>hello world</main>
   </body>
 </html>
