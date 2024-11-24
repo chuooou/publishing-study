@@ -125,76 +125,271 @@
           </div>
         </nav>
       </div>
-      <nav aria-labelledby="category-nav" class="mx-auto w-[1200px]">
+      <nav
+        aria-labelledby="category-nav"
+        class="mx-auto w-[1200px] flex justify-between"
+      >
         <ul
           class="flex [&_a]:cursor-pointer [&>li>a]:pr-[30px] [&>li>a]:py-[20px] [&>li>a]:block [&>li>a]:text-[17px] [&>li>a]:text-[#555] [&>li>a]:leading-[1] [&>li]:box-content"
         >
           <li class="group relative">
             <a href="#">해외패키지</a>
             <div
-              class="invisible group-hover:visible bg-white absolute top-[calc(100%+1px)] left-0 w-[100dvw]"
+              class="invisible group-hover:visible bg-white absolute top-[calc(100%+1px)] left-[calc(((100vw-1200px)/2)*-1)] w-[100dvw] border-b-[1px] border-[#ccc] z-10"
             >
               <ul
-                class="flex items-center gap-[20px] [&_a]:h-[50px] [&_a]:p-0 [&_a]:border-b-2 [&_a]:border-b-transparent hover:[&_a]:border-b-[black] [&_a]:cursor-pointer [&_a]:text-[15px] [&_a]:text-[#555] [&_a]:flex [&_a]:items-center"
+                class="w-[1200px] mx-auto flex items-center gap-[20px] [&>li>a]:h-[50px] [&>li>a]:p-0 [&>li>a]:border-b-2 [&>li>a]:border-b-transparent hover:[&>li>a]:border-b-[black] [&>li>a]:cursor-pointer [&>li>a]:text-[15px] [&>li>a]:text-[#555] [&>li>a]:flex [&>li>a]:items-center"
               >
                 <li class="group/sub relative">
                   <a href="#">유럽</a>
                   <div
-                    class="invisible group-hover/sub:visible absolute left-0 top-[calc(100%+1px)]"
+                    class="w-[100dvw] invisible group-hover/sub:visible absolute left-[calc(((100vw-1200px)/2)*-1)] top-[calc(100%+1px)]"
                   >
-                    <div class="bg-[#f5f5f5] p-[30px]">
-                      <h3 class="font-bold">지역 [해외패키지] 유럽</h3>
-                      <ul>
-                        <li><a href="#">서유럽</a></li>
-                        <li><a href="#">동유럽</a></li>
-                      </ul>
+                    <div
+                      class="w-[1200px] mx-auto flex [&>div]:p-[30px] [&>div]:border-r-[1px] [&>div]:border-r-[#ccc] [&_h3]:mb-[10px] [&_a:hover]:underline [&_a]:text-[15px] [&_a]:text-[#555]"
+                    >
+                      <div class="bg-[#f5f5f5] w-[600px]">
+                        <h3 class="font-semibold text-[18px]">
+                          <span class="text-[#4567ad]">지역</span> [해외패키지]
+                          유럽
+                        </h3>
+                        <ul
+                          class="flex flex-col flex-wrap gap-[10px] h-[340px]"
+                        >
+                          <li><a href="#">서유럽</a></li>
+                          <li><a href="#">동유럽</a></li>
+                          <li><a href="#">발칸/동유럽</a></li>
+                          <li><a href="#">독일/스위스/오스트리아</a></li>
+                          <li><a href="#">스페인/포르투갈/모로코</a></li>
+                          <li><a href="#">튀르키예/그리스</a></li>
+                          <li><a href="#">북유럽/발틱</a></li>
+                          <li><a href="#">두바이/이집트/사우디</a></li>
+                          <li><a href="#">코카서스/중앙아시아</a></li>
+                        </ul>
+                      </div>
+                      <div class="w-[300px] bg-white">
+                        <h3 class="font-se text-[18px] text-[#4567ad]">테마</h3>
+                        <ul class="flex flex-col gap-[10px]">
+                          <li><a href="#">여행에 테마를 더하다</a></li>
+                        </ul>
+                      </div>
+                      <div class="w-[300px] bg-white">
+                        <h3 class="font-se text-[18px] text-[#4567ad]">
+                          프로모션
+                        </h3>
+                        <ul class="flex flex-col gap-[10px]">
+                          <li><a href="#">동유럽 다다익선 할인 이벤트</a></li>
+                          <li><a href="#">스위스 알프스 여행 BEST</a></li>
+                          <li><a href="#">이집트 100% 출발확정</a></li>
+                          <li><a href="#">노랑플러스 동유럽/발칸</a></li>
+                          <li><a href="#">서유럽 2인 이상 동반자 할인</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </li>
-                <li class="group/sub">
-                  <a href="#" aria-expanded="false" aria-controls="asia-detail"
-                    >동남아</a
+                <li class="group/sub relative">
+                  <a href="#">동남아</a>
+                  <div
+                    class="invisible group-hover/sub:visible absolute left-[0] top-[calc(100%+1px)]"
                   >
+                    <div
+                      class="w-[1200px] mx-auto flex [&>div]:p-[30px] [&>div]:border-r-[1px] [&>div]:border-r-[#ccc] [&_h3]:mb-[10px] [&_a:hover]:underline [&_a]:text-[15px] [&_a]:text-[#555]"
+                    >
+                      <div class="bg-[#f5f5f5] w-[600px]">
+                        <h3 class="font-semibold text-[18px]">
+                          <span class="text-[#4567ad]">지역</span> [해외패키지]
+                          유럽
+                        </h3>
+                        <ul
+                          class="flex flex-col flex-wrap gap-[10px] h-[340px]"
+                        >
+                          <li><a href="#">방콕/파타야</a></li>
+                          <li><a href="#">푸켓</a></li>
+                          <li><a href="#">치앙마이/치앙라이</a></li>
+                          <li><a href="#">싱가포르</a></li>
+                          <li><a href="#">브루나이</a></li>
+                          <li><a href="#">코타키나발루</a></li>
+                          <li><a href="#">발리</a></li>
+                          <li><a href="#">하노이/하롱베이/호치민</a></li>
+                          <li><a href="#">다낭/호이안/후에</a></li>
+                          <li><a href="#">나트랑/달랏</a></li>
+                          <li><a href="#">푸꾸옥</a></li>
+                          <li><a href="#">캄보디아/베트남 연계</a></li>
+                          <li><a href="#">라오스</a></li>
+                          <li><a href="#">보라카이</a></li>
+                          <li><a href="#">세부</a></li>
+                          <li><a href="#">보홀</a></li>
+                          <li><a href="#">인도/네팔</a></li>
+                          <li><a href="#">바탐</a></li>
+                          <li><a href="#">스리랑카</a></li>
+                          <li><a href="#">마닐라/엘니도</a></li>
+                        </ul>
+                      </div>
+                      <div class="w-[300px] bg-white">
+                        <h3 class="font-se text-[18px] text-[#4567ad]">테마</h3>
+                        <ul class="flex flex-col gap-[10px]">
+                          <li><a href="#">여행에 테마를 더하다</a></li>
+                        </ul>
+                      </div>
+                      <div class="w-[300px] bg-white">
+                        <h3 class="font-se text-[18px] text-[#4567ad]">
+                          프로모션
+                        </h3>
+                        <ul class="flex flex-col gap-[10px]">
+                          <li>
+                            <a href="#">대한항공 타고 열대자연의 선물 발리로</a>
+                          </li>
+                          <li>
+                            <a href="#">이스타항공 신규취항, 알차게 치앙마이</a>
+                          </li>
+                          <li>
+                            <a href="#">자연과 함께 스릴만점 이색체험, 보홀</a>
+                          </li>
+                          <li>
+                            <a href="#">대한항공타고 떠나는 방콕/파타야 여행</a>
+                          </li>
+                          <li>
+                            <a href="#">아시아나 항공타고,천 년의 역사속으로</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </li>
-          <li><a href="#"> 에어텔 </a></li>
+          <li><a href="#">에어텔</a></li>
           <li>
-            <a href="#"> 허니문 </a>
+            <a href="#">허니문</a>
           </li>
         </ul>
-        <div
-          class="invisible absolute group-hover:visible flex justify-between w-[1200px]"
+        <ul
+          class="flex gap-[15px] [&>li]:border-b-transparent text-[#555] text-[14px] [&>li]:flex [&>li]:items-center [&>li]:cursor-pointer group"
         >
-          <ul
-            class="flex gap-[20px] [&>li]:border-b-2 [&>li]:border-b-transparent hover:[&>li]:border-b-[black] [&>li]:cursor-pointer [&>li]:h-[50px] [&>li]:text-[15px] [&>li]:text-[#555] [&>li]:flex [&>li]:items-center"
-          >
-            <li>유럽</li>
-            <li>동남아</li>
-            <li>일본</li>
-            <li>괌/사이판</li>
-            <li>호주/뉴질랜드</li>
-            <li>미주/캐나다/하와이</li>
-            <li>중남미/아프리카</li>
-            <li>대만/홍콩/마카오</li>
-            <li>중국/몽골</li>
-            <li>부산/지방</li>
-            <li>출발</li>
-          </ul>
-          <ul
-            class="flex gap-[15px] [&>li]:border-b-transparent text-[#555] text-[14px] [&>li]:flex [&>li]:items-center [&>li]:cursor-pointer group"
-          >
-            <li>기획전</li>
-            <li>이벤트</li>
-            <li>홈쇼핑</li>
-          </ul>
-          <div class="invisible absolute group-hover:visible w-full">
-            안녕하세요
-          </div>
-        </div>
+          <li>기획전</li>
+          <li>이벤트</li>
+          <li>홈쇼핑</li>
+        </ul>
       </nav>
     </header>
-    <main>hello world</main>
+    <main class="w-full">
+      <div class="">
+        <div class="overflow-hidden">
+          <div
+            class="flex translate-x-[-210px] mt-[40px] [&>div]:mr-[20px] [&>div]:min-w-[420px] [&>div]:min-h-[480px] [&_img]:w-full [&_img]:h-full [&_img]:object-cover [&>div]:overflow-hidden [&>div]:rounded-[10px] [&>div]:cursor-pointer"
+          >
+            <div>
+              <img
+                src="https://scdn.ybtour.co.kr/banner/common/202411041254453562304013002076.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://scdn.ybtour.co.kr/banner/common/202411011232562272304013002067.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://scdn.ybtour.co.kr/banner/common/202411150115230522304013001091.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://scdn.ybtour.co.kr/banner/common/202411050904291722301012001011.jpg"
+                alt="중국 무비자"
+              />
+            </div>
+            <div>
+              <img
+                src="https://scdn.ybtour.co.kr/banner/common/202411060332096862301012001073.jpg"
+                alt="빛나는 야경도시 홍콩&마카오"
+              />
+            </div>
+            <div>
+              <img
+                src="https://scdn.ybtour.co.kr/banner/common/202411080100362122301012001047.jpg"
+                alt="괌사이판 슈퍼세일 할인쿠폰"
+              />
+            </div>
+            <div>
+              <img
+                src="https://scdn.ybtour.co.kr/banner/common/202411120150285572301012001010.jpg"
+                alt="11월 테마한일크루즈"
+              />
+            </div>
+            <div>
+              <img
+                src="https://scdn.ybtour.co.kr/banner/common/202411130748348752301012001067.jpg"
+                alt="동남아 얼리버드 할인쿠폰"
+              />
+            </div>
+            <div>
+              <img
+                src="https://scdn.ybtour.co.kr/banner/common/202411141217332012301012001011.jpg"
+                alt="모로코 관광청 "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="mt-[15px] flex justify-center items-center gap-[20px]">
+          <!-- progressBar-->
+          <div class="w-[600px] h-[4px] bg-[#ccc]">
+            <span class="block w-[120px] h-[4px] bg-[#000]"></span>
+          </div>
+          <!-- pagination -->
+          <div class="text-[14px] text-[#555]">
+            <strong class="text-black">2</strong>
+            <span>|</span>
+            <span>9</span>
+          </div>
+          <!-- controller -->
+          <div
+            class="relative flex gap-[20px] rounded-[20px] border-[1px] border-[#ccc] h-[40px] p-[0_55px_0_20px]"
+          >
+            <button>
+              <span class="block w-[2px] h-[8px] bg-[black] rotate-45"></span>
+              <span
+                class="block w-[2px] h-[8px] bg-[black] -rotate-45 mt-[-3px]"
+              ></span>
+              <span class="sr-only">이전</span>
+            </button>
+            <button>
+              <div class="rotate-180">
+                <span class="block w-[2px] h-[8px] bg-[black] rotate-45"></span>
+                <span
+                  class="block w-[2px] h-[8px] bg-[black] -rotate-45 mt-[-3px]"
+                ></span>
+              </div>
+              <span class="sr-only">다음</span>
+            </button>
+            <button
+              class="absolute top-[-1px] right-[-1px] w-[40px] h-[40px] border-[1px] border-[#ccc] rounded-[50%] bg-transparent flex items-center justify-center"
+            >
+              <div class="flex flex-row items-center justify-center">
+                <span class="block w-[2px] h-[10px] bg-[black]"></span>
+                <span class="ml-[1px] block w-[2px] h-[10px] bg-[black]"></span>
+                <span class="sr-only">auto play</span>
+              </div>
+            </button>
+          </div>
+          <button
+            class="rounded-full w-[40px] h-[40px] border-[1px] border-[#ccc] flex items-center justify-center"
+          >
+            <div>
+              <span class="block w-[2px] h-[12px] bg-[black]"></span>
+              <span
+                class="block w-[2px] h-[12px] bg-[black] -rotate-90 mt-[-12px]"
+              ></span>
+            </div>
+            <span class="sr-only">펼치기</span>
+          </button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
