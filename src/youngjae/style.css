@@ -28,3 +28,11 @@
     transform: rotate(-45deg);
   }
 }
+
+body {
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}

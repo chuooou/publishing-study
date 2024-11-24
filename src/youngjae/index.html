@@ -127,7 +127,7 @@
       </div>
       <nav
         aria-labelledby="category-nav"
-        class="mx-auto w-[1200px] flex justify-between"
+        class="w-full px-[calc((100vw-1200px)/2)] flex justify-between"
       >
         <ul
           class="flex [&_a]:cursor-pointer [&>li>a]:pr-[30px] [&>li>a]:py-[20px] [&>li>a]:block [&>li>a]:text-[17px] [&>li>a]:text-[#555] [&>li>a]:leading-[1] [&>li]:box-content"
@@ -135,10 +135,10 @@
           <li class="group relative">
             <a href="#">해외패키지</a>
             <div
-              class="invisible group-hover:visible bg-white absolute top-[calc(100%+1px)] left-[calc(((100vw-1200px)/2)*-1)] w-[100dvw] border-b-[1px] border-[#ccc] z-10"
+              class="invisible group-hover:visible bg-white absolute top-[calc(100%+1px)] left-[calc(((100vw-1200px)/2)*-1)] w-screen border-b-[1px] border-[#ccc] z-10"
             >
               <ul
-                class="w-[1200px] mx-auto flex items-center gap-[20px] [&>li>a]:h-[50px] [&>li>a]:p-0 [&>li>a]:border-b-2 [&>li>a]:border-b-transparent hover:[&>li>a]:border-b-[black] [&>li>a]:cursor-pointer [&>li>a]:text-[15px] [&>li>a]:text-[#555] [&>li>a]:flex [&>li>a]:items-center"
+                class="w-full px-[calc((100vw-1200px)/2)] flex items-center gap-[20px] [&>li>a]:h-[50px] [&>li>a]:p-0 [&>li>a]:border-b-2 [&>li>a]:border-b-transparent hover:[&>li>a]:border-b-[black] [&>li>a]:cursor-pointer [&>li>a]:text-[15px] [&>li>a]:text-[#555] [&>li>a]:flex [&>li>a]:items-center"
               >
                 <li class="group/sub relative">
                   <a href="#">유럽</a>
@@ -390,6 +390,80 @@
           </button>
         </div>
       </div>
+      <section
+        class="my-[80px] w-full px-[calc((100vw-1200px)/2)] cursor-pointer"
+      >
+        <h3 class="text-[32px] text-[rpb(17, 17, 17)] leading-[25px]">
+          망설이면 솔드아웃! <strong>옐로팡딜</strong>
+        </h3>
+        <div class="flex">
+          <button class="ml-auto text-[#555] text-[15px]">전체보기 ></button>
+        </div>
+        <div
+          class="relative mt-[20px] flex p-[40px_40px_37px] border-[1px] border-[#ddd] rounded-[16px] flex-grow"
+        >
+          <div
+            class="relative w-[505px] h-[310px] rounded-[12px] overflow-hidden"
+          >
+            <div
+              class="absolute top-0 left-0 bg-black/[0.6] w-full px-[10px] py-[5px] text-[16px] text-white"
+            >
+              <span>🕒</span>
+              <span class="ml-1">11.19 10:00 ~ 11.25 23:59</span>
+            </div>
+            <img
+              src="https://dimgcdn.ybtour.co.kr/TN/f9/f9c8ddcd83d18a43ee31ec7d6c0b3cde.tn.630x410.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="pl-[40px] flex flex-col flex-grow">
+            <span
+              class="mt-[5px] text-[rgb(17,17,17)] text-[24px] leading-[1.4] text-ellipsis"
+              >[패키지] 우베 3일</span
+            >
+            <ul
+              class="mt-[8px] text-[16px] leading-[1.8] [&>li]:relative [&>li]:pl-[13px] [&>li]:text-[#555] [&>li]:before:content[''] [&>li]:before:absolute [&>li]:before:w-[3px] [&>li]:before:h-[3px] [&>li]:before:bg-[#555] [&>li]:before:top-[11px] [&>li]:before:left-0"
+            >
+              <li>전일정 전통료칸호텔</li>
+              <li>일본전통 가이세키 석식</li>
+              <li>유후인벳푸 VS 미네죠후</li>
+            </ul>
+            <div class="flex items-center gap-[15px] mt-[25px]">
+              <em
+                class="inline-flex items-center h-[24px] p-[0_8px] rounded-[4px] bg-[#f2ecec] text-[#f23f45] text-[13px] leading-[1] not-italic"
+                >선탁순특가</em
+              >
+              <span class="text-[20px] text-[#4567ad]">잔여 92석</span>
+              <span class="w-[1px] h-[13px] bg-[#ddd]"></span>
+              <span class="text-[20px] text-[#4567ad]">100명 한정</span>
+            </div>
+            <div class="flex flex-row justify-between items-end mt-auto">
+              <div class="flex flex-col">
+                <span class="text-[16px] text-[#f23f45]"
+                  >최대 4만원 즉시할인</span
+                >
+                <div class="text-[15px]">
+                  <span class="text-[#777] text-[20px]"
+                    ><del>689,000원</del>~</span
+                  >
+                  <span
+                    ><strong class="text-[24px] mr-[3px]">649,000</strong>원~
+                  </span>
+                </div>
+              </div>
+              <button
+                class="w-[140px] h-[50px] rounded-[6px] bg-[#111111] text-[18px] text-white"
+              >
+                예약하기
+              </button>
+            </div>
+          </div>
+          <div
+            class="absolute top-0 right-0 w-[160px] h-[80px] bg-[#ffc72c] rounded-tl-[40px] rounded-bl-[40px]"
+          ></div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
