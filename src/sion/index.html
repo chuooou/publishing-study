@@ -17,9 +17,9 @@
   </head>
   <body class="flex flex-col">
     <header class="flex flex-col border-b border-black">
-      <nav class="h-[3rem]">
+      <nav class="bg-[#f3f3f3]">
         <ul
-          class="flex justify-end items-center h-full gap-[2rem] bg-[#f3f3f3] text-[#555] text-[1.3rem]">
+          class="flex justify-end items-center py-[0.3rem] gap-[2rem] text-[#555] text-[1.3rem] w-[120rem] mx-auto">
           <li><a href="#">로그인</a></li>
           <li><a href="#">회원가입</a></li>
           <li><a href="#">예약확인/결제</a></li>
@@ -27,21 +27,31 @@
         </ul>
       </nav>
 
-      <div class="flex pt-[2rem] pb-[1rem]">
-        <h1><img src="https://cimgcdn.ybtour.co.kr/common/logo/logo_l.png" /></h1>
-        <div
-          class="flex items-center border-[2px] rounded-[3rem] px-[2.5rem] py-[2rem] border-[#ffcb31]">
-          <a href="#" class="text-[#999]">여행 떠나고, 금테크 하자!</a>
-          <button
-            class="bg-[url('https://cimgcdn.ybtour.co.kr/common/button/btn_search.png')] bg-no-repeat" />
+      <section class="flex items-center justify-between pt-[2rem] pb-[1rem] w-[120rem] mx-auto">
+        <div class="flex items-center gap-[3rem]">
+          <h1>
+            <img class="h-[4.6rem]" src="https://cimgcdn.ybtour.co.kr/common/logo/logo_l.png" />
+          </h1>
+          <div
+            class="flex h-[4.6rem] items-center border-[2px] rounded-[3rem] px-[2.5rem] border-[#ffcb31]">
+            <a href="#" class="text-[#999]">여행 떠나고, 금테크 하자!</a>
+            <button
+              class="size-6 bg-[url('https://cimgcdn.ybtour.co.kr/common/button/btn_search.png')] bg-no-repeat" />
+          </div>
         </div>
 
-        <div class="flex"></div>
-      </div>
+        <div class="flex">
+          <nav>
+            <ul>
+              <li><a href="#">베스트</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
 
-      <nav class="flex">
+      <nav>
         <ul
-          class="flex [&_a]:block [&_a:hover]:font-bold [&_a]:px-[2rem] [&_a]:py-[1.5rem] text-[#555] text-[1.7rem] [&_li]:block">
+          class="flex [&_a]:block [&_a:hover]:font-bold [&_a]:px-[2rem] [&_a]:py-[1.5rem] text-[#555] text-[1.7rem] [&_li]:block w-[120rem] mx-auto">
           <li><a href="#">해외패키지</a></li>
           <li><a href="#">에어텔</a></li>
           <li><a href="#">허니문</a></li>
@@ -58,14 +68,14 @@
       </nav>
     </header>
 
-    <main>
+    <main class="h-[800px]">
       <section>as</section>
     </main>
 
     <footer>
-      <nav class="flex justify-center border-t border-b border-[#ddd] bg-[#f5f5f5]">
+      <nav class="border-t border-b border-[#ddd] bg-[#f5f5f5]">
         <ul
-          class="flex gap-[3rem] [&_li]:text-[1.5rem] [&_li]:text-[#111] [&_li]:font-medium [&_li]:py-[1.8rem]">
+          class="flex gap-[3rem] [&_li]:text-[1.5rem] [&_li]:text-[#111] [&_li]:font-medium [&_li]:py-[1.8rem] w-[120rem] mx-auto">
           <li><a href="#">고객후기</a></li>
           <li><a href="#">공지사항</a></li>
           <li><a href="#">자주하는 질문</a></li>
@@ -77,35 +87,39 @@
         </ul>
       </nav>
 
-      <nav class="flex border-t border-b py-[1.3rem] items-center justify-between">
-        <ul class="flex gap-[3rem] font-medium">
-          <li><a href="#">회사소개</a></li>
-          <li><a href="#" class="text-[#4567ad]">개인정보처리방침</a></li>
-          <li><a href="#">이용약관</a></li>
-          <li><a href="#">여행약관</a></li>
-          <li><a href="#">여행자보험</a></li>
-          <li><a href="#">대리점안내</a></li>
-          <li><a href="#">오시는 길</a></li>
-        </ul>
+      <nav class="border-t border-b py-[1.3rem]">
+        <div class="flex justify-between items-center w-[120rem] mx-auto">
+          <ul class="flex gap-[3rem] font-medium [&_a]:block">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#" class="text-[#4567ad]">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">여행약관</a></li>
+            <li><a href="#">여행자보험</a></li>
+            <li><a href="#">대리점안내</a></li>
+            <li><a href="#">오시는 길</a></li>
+          </ul>
 
-        <img src="https://cimgcdn.ybtour.co.kr/common/footer/btn_sns.png" />
+          <img src="https://cimgcdn.ybtour.co.kr/common/footer/btn_sns.png" />
+        </div>
       </nav>
 
-      <section class="flex divide-x divide-[#ddd] [&_address]:not-italic">
+      <section
+        class="flex divide-x divide-[#ddd] [&_address]:not-italic py-[4rem] w-[120rem] mx-auto">
         <div class="flex flex-col gap-[1rem] flex-grow text-[#777] text-[1.2rem]">
-          <div class="flex gap-[2rem]">
+          <div class="flex gap-[2rem] items-center">
             <h5 class="text-[1.5rem] font-bold text-[#222]">(주)노랑풍선</h5>
             <img
               src="https://cimgcdn.ybtour.co.kr/common/footer/logo_kosdaq_.png"
               alt="코스닥상장법인"
-              class="object-contain" />
+              class="h-[1rem]" />
           </div>
+
           <address class="flex">
             <p class="after:content-['_|'] after:mx-2">대표이사 김진국</p>
             <p>서울특별시 중구 수표로31, 노랑풍선빌딩</p>
           </address>
 
-          <dl class="flex">
+          <dl class="flex [&>div]:flex [&>div]:gap-[0.4rem]">
             <div>
               <dt>사업자등록번호</dt>
               <dd>104-81-64440</dd>
@@ -117,14 +131,14 @@
             <div>
               <dt>통신판매업신고번호</dt>
               <dd>제2008-서울중구-0278</dd>
+              <dd><a href="#" class="text-[1.2rem] underline text-[#555]">사업자 정보확인</a></dd>
             </div>
           </dl>
-          <a href="#" class="text-[1.2rem] underline text-[#555]">사업자 정보확인</a>
 
           <address>
             [부산지사] 부산광역시 부산진구 중앙대로668, 9층 912호 (부전동, 에이원프라자)
           </address>
-          <dl>
+          <dl class="flex gap-[0.4rem]">
             <dt>사업자등록번호</dt>
             <dd>870-85-01900</dd>
           </dl>
@@ -137,31 +151,48 @@
 
         <div
           class="pl-[4rem] text-[1.3rem] [&_dt]:text-[#555] [&_dd]:text-[#111] [&_dd]:font-medium">
-          <dl>
-            <dt>패키지여행 상담</dt>
-            <dd>1544-2288</dd>
+          <dl class="flex">
+            <div>
+              <dt>패키지여행 상담</dt>
+              <dd>1544-2288</dd>
+            </div>
 
-            <dt>자유여행 상담</dt>
-            <dd>1644-3399</dd>
+            <div>
+              <dt>자유여행 상담</dt>
+              <dd>1644-3399</dd>
+            </div>
 
-            <dt>부산/지방출발 상담</dt>
-            <dd>051-713-0710</dd>
+            <div>
+              <dt>부산/지방출발 상담</dt>
+              <dd>051-713-0710</dd>
+            </div>
           </dl>
 
           <dl class="text-[1.2rem] text-[#555] [&_a]:underline">
-            <dt>대표메일</dt>
-            <dd><a href="mailto:#">master@ybtour.com</a></dd>
-            <dt>판매제휴</dt>
-            <dd><a href="mailto:#">salespartner@ybtour.com</a></dd>
-            <dt>마케팅제휴</dt>
-            <dd><a href="mailto:#">marketing@ybtour.com</a></dd>
-            <dt>대리점문의</dt>
-            <dd><a href="mailto:#">sales.agent@ybtour.co.kr</a></dd>
+            <div>
+              <dt>대표메일</dt>
+              <dd><a href="mailto:#">master@ybtour.com</a></dd>
+            </div>
+
+            <div>
+              <dt>판매제휴</dt>
+              <dd><a href="mailto:#">salespartner@ybtour.com</a></dd>
+            </div>
+
+            <div>
+              <dt>마케팅제휴</dt>
+              <dd><a href="mailto:#">marketing@ybtour.com</a></dd>
+            </div>
+
+            <div>
+              <dt>대리점문의</dt>
+              <dd><a href="mailto:#">sales.agent@ybtour.co.kr</a></dd>
+            </div>
           </dl>
         </div>
       </section>
 
-      <div>
+      <div class="w-[120rem] mx-auto">
         <ul class="text-[#555] text-[1.2rem] font-medium flex-1">
           <li class="inline-block border border-[#777] rounded-lg">
             <a href="#">소비자중심경영 공정거래위원회 한국소비자원</a>
@@ -185,7 +216,8 @@
             <a href="#">국외여행상품 정보제공 표준안 참여여행사 마크</a>
           </li>
         </ul>
-        <ul class="list-disc text-[1.2rem] text-[#777]">
+        <ul
+          class="mt-[2rem] list-disc list-inside text-[1.2rem] text-[#777] [&_li::marker]:text-[1.2rem]">
           <li>
             노랑풍선은 개별 항공권, 단품 및 일부 여행상품에 대하여 판매중개자로서 통신판매의
             당사자가 아닙니다. 따라서 해당 상품의 상품·거래정보 및 거래 등에 대하여 책임을 지지
@@ -196,7 +228,9 @@
             포함된 가격이며, 유류할증료는 유가 및 환율 등에 따라 변동될 수 있습니다.
           </li>
         </ul>
-        <p class="text-[1.2rem] text-[#777]">© Yellow Balloon tour. All Rights Reserved.</p>
+        <p class="mt-[3rem] text-[1.2rem] text-[#777]">
+          © Yellow Balloon tour. All Rights Reserved.
+        </p>
       </div>
     </footer>
   </body>
