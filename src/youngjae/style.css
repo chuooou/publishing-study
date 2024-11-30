@@ -1,3 +1,11 @@
+body {
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .banner-close {
   position: absolute;
   right: 0;
@@ -29,10 +37,58 @@
   }
 }
 
-body {
-  scrollbar-width: 0;
-  -ms-overflow-style: none;
+/*
+  이미지 크기 420px + 20px(margin) + 이미지 중간값 210px = 650px
+  이미지 갯수 9개
+  총 이미지 크기 650px * 9 = 5850px
+*/
+
+@keyframes slide {
+  0%,
+  9.25% {
+    transform: translateX(-650px);
+  }
+  11.11%,
+  20.36% {
+    transform: translateX(-1300px);
+  }
+  22.22%,
+  31.47% {
+    transform: translateX(-1950px);
+  }
+  33.33%,
+  42.58% {
+    transform: translateX(-2600px);
+  }
+  44.44%,
+  53.69% {
+    transform: translateX(-3250px);
+  }
+  55.55%,
+  64.8% {
+    transform: translateX(-3900px);
+  }
+  66.66%,
+  75.91% {
+    transform: translateX(-4550px);
+  }
+  77.77%,
+  87.02% {
+    transform: translateX(-5200px);
+  }
+  88.88%,
+  98.13% {
+    transform: translateX(-5850px);
+  }
+  100% {
+    transform: translateX(-650px);
+  }
 }
-body::-webkit-scrollbar {
-  display: none;
+
+.animate-slide:hover {
+  animation-play-state: paused;
+}
+
+.animate-slide {
+  animation: slide 36s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
