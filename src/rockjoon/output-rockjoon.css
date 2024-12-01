@@ -563,6 +563,22 @@ video {
   margin-right: auto;
 }
 
+.mt-\[40px\] {
+  margin-top: 40px;
+}
+
+.mt-\[4rem\] {
+  margin-top: 4rem;
+}
+
+.mr-\[2rem\] {
+  margin-right: 2rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -573,6 +589,18 @@ video {
 
 .h-\[5\.7rem\] {
   height: 5.7rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-\[48rem\] {
+  height: 48rem;
+}
+
+.min-h-\[48rem\] {
+  min-height: 48rem;
 }
 
 .w-\[120rem\] {
@@ -587,8 +615,33 @@ video {
   width: 340px;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.w-\[42rem\] {
+  width: 42rem;
+}
+
+.w-\[420px\] {
+  width: 420px;
+}
+
+.min-w-\[42rem\] {
+  min-width: 42rem;
+}
+
 .max-w-\[120rem\] {
   max-width: 120rem;
+}
+
+.translate-x-\[-210px\] {
+  --tw-translate-x: -210px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -627,8 +680,20 @@ video {
   gap: 4rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
 .rounded-\[30px\] {
   border-radius: 30px;
+}
+
+.rounded-\[1rem\] {
+  border-radius: 1rem;
 }
 
 .border-2 {
@@ -652,6 +717,11 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .px-\[2rem\] {
@@ -705,4 +775,41 @@ video {
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+}
+
+.\[\&\>div\]\:mr-\[20px\]>div {
+  margin-right: 20px;
+}
+
+.\[\&\>div\]\:min-h-\[480px\]>div {
+  min-height: 480px;
+}
+
+.\[\&\>div\]\:min-w-\[420px\]>div {
+  min-width: 420px;
+}
+
+.\[\&\>div\]\:cursor-pointer>div {
+  cursor: pointer;
+}
+
+.\[\&\>div\]\:overflow-hidden>div {
+  overflow: hidden;
+}
+
+.\[\&\>div\]\:rounded-\[10px\]>div {
+  border-radius: 10px;
+}
+
+.\[\&_img\]\:h-full img {
+  height: 100%;
+}
+
+.\[\&_img\]\:w-full img {
+  width: 100%;
+}
+
+.\[\&_img\]\:object-cover img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
