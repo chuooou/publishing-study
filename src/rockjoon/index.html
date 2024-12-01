@@ -4,11 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="/src/css/output.css" rel="stylesheet" />
+      <link href="reset.css" rel="stylesheet"/>
+      <link href="output-rockjoon.css" rel="stylesheet"/>
+      <link href="yb.css" rel="stylesheet"/>
   </head>
   <body>
-    <div class="flex">
-      <p class="text-yellow-500 font-bold">노랑통닭!</p>
-    </div>
+    <header>
+        <div class="bg-gray-100">
+            <div class="max-w-[120rem] mx-auto">
+                <ul class="flex justify-end gap-[2rem]">
+                    <li class="text-[1.5rem]">
+                        <a href="https://account.ybtour.co.kr/signIn?channelCode=011">로그인</a>
+                    </li>
+                    <li class="text-[1.5rem]">
+                        <a href="https://account.ybtour.co.kr/signUp/intro">회원가입</a>
+                    </li>
+                    <li class="text-[1.5rem]">
+                        <a href="https://account.ybtour.co.kr/signIn?channelCode=011">예약확인/결제</a>
+                    </li>
+                    <li class="text-[1.5rem]">
+                        <a href="https://pkg.ybtour.co.kr/cs/main.yb">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-between w-[120rem] mx-auto pt-[2rem] pb-[1rem]">
+            <div class="flex justify-between gap-10">
+                <h1 class="">
+                    <img class="w-[16.5rem] h-[4.4rem]" src="https://cimgcdn.ybtour.co.kr/common/logo/logo_l.png" alt="노랑풍선">
+                </h1>
+                <div class="flex justify-between items-center w-[340px] pr-[25px] pl-[20px] rounded-[30px] border-2 border-[#ffcb31]">
+                    <a href="#" class="text-gray-400 text-[1.5rem]">2025 트렌드 여행지 미리보기</a>
+                    <button class="btn-search">
+                        <img src="https://cimgcdn.ybtour.co.kr/common/button/btn_search.png">
+                    </button>
+                </div>
+            </div>
+            <div class="flex gap-[4rem]">
+                <ul class="flex justify-around items-center text-[1.7rem] gap-10">
+                    <li class="">베스트</li>
+                    <li>*긴급특가</li>
+                    <li>*출발확정</li>
+                    <li>*얼리버드</li>
+                    <li>*옐로LIVE</li>
+                </ul>
+                <div class="flex justify-normal gap-[1rem]">
+                    <button class="">
+                        <img src="https://cimgcdn.ybtour.co.kr/common/button/ico_mypage.png">
+                    </button>
+                    <button class="">
+                        <img src="https://cimgcdn.ybtour.co.kr/common/button/ico_recent.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="flex items-center w-[120rem] mx-auto h-[5.7rem] border-b-4 border-black">
+            <ul class="flex text-[1.7rem]">
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">해외패키지</a>
+                </li>
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">에어텔</a>
+                </li>
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">허니문</a>
+                </li>
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">골프</a>
+                </li>
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">테마/크루즈</a>
+                </li>
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">프리미엄</a>
+                </li>
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">국내여행</a>
+                </li>
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">항공</a>
+                </li>
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">호텔</a>
+                </li>
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">투어&티켓</a>
+                </li>
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">렌터카</a>
+                </li>
+                <li>
+                    <a class="relative px-[2rem] py-[2.5rem]" href="https://pkg.ybtour.co.kr/product/main.yb?menu=PKG&dspSid=AA00000">기업/단체</a>
+                </li>
+            </ul>
+        </nav>
+        <hr class="border-t-1 border-black">
+    </header>
   </body>
 </html>
