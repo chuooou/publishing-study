@@ -39,6 +39,10 @@ npx tailwindcss -i ./src/rockjoon/init.css -o ./src/rockjoon/output-rockjoon.css
   - inline이기 때문에 너비, 높이를 가질 수 없다. -> inline-block 으로 변경 해야 함.
   - margin top, bottom 지정 불가 / padding은 전부 지정 가능
 - 가격 강조를 위해 폰트 크기가 다를 경우 flex items-baseline을 통해 수직 정렬을 바닥에 맞게 정렬
+ - <span class="inline-flex items-center h-[2.4rem] px-2 rounded-[0.4rem] bg-[#5778BB] text-white text-[1.3rem]">해외패키지</span>
+### 4. 추천상품
+- 해외패키지 : 이미지보다 큰 div를 만들고 이미지를 안에 넣는다. div에 relative를 넣고 absolute div를 만들어 상대 위치로 이미지를 벗어난 영역을 만듬.
+- 이미지 아래 글자들은 좌우 여백이 같으므로 하나의 div에 넣어 작업하면 좋을듯 하다.
 
 ## 추후 과제
 - 가상 돔으로 특수 문자 생성하기 
