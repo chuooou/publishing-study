@@ -35,3 +35,13 @@ html, body {
     background-color: gainsboro;
     content: "";
 }
+
+.yellow-balloon::after {
+    position: absolute;
+    right: 0px;
+    bottom: 22px;
+    width: 176px;
+    height: 127px;
+    background: url(https://ybtour.co.kr/assets/main/desktop/images/ico/ico_spr.png) 0px 0px no-repeat;
+    content: "";
+}
