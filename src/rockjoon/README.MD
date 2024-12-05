@@ -9,6 +9,7 @@ npx tailwindcss -i ./src/rockjoon/init.css -o ./src/rockjoon/output-rockjoon.css
 - 수평선 긋기
   - border bottom으로 수평선 긋기 (안됨)
 - 자식 요소가 한 개일때도 정렬을 위해 flex를 사용하는 것이 맞는지?
+- block이 필요한 경우 div안에 span을 넣는 것이 맞는지? span에 block을 주는 것이 맞는지?
 
 ## 해결된 문제
 
@@ -43,6 +44,10 @@ npx tailwindcss -i ./src/rockjoon/init.css -o ./src/rockjoon/output-rockjoon.css
 ### 4. 추천상품
 - 해외패키지 : 이미지보다 큰 div를 만들고 이미지를 안에 넣는다. div에 relative를 넣고 absolute div를 만들어 상대 위치로 이미지를 벗어난 영역을 만듬.
 - 이미지 아래 글자들은 좌우 여백이 같으므로 하나의 div에 넣어 작업하면 좋을듯 하다.
+
+### 5. 온캉스 여행이 제격!
+- a태그와 img태그는 기본적으로 inline속성
+- 하지만 a태그는 하위 요소가 block일 경우 a태그도 block이 됨.
 
 ## 추후 과제
 - 가상 돔으로 특수 문자 생성하기 
