@@ -92,3 +92,34 @@ body::-webkit-scrollbar {
 .animate-slide {
   animation: slide 36s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
+
+.card {
+  display: inline-grid;
+  color: white;
+  transition: transform 0.5s ease-in-out;
+  transform: perspective(2500px) rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.card > * {
+  grid-area: 1/1/1/1;
+  width: 590px;
+  height: 340px;
+  padding: 50px;
+  border-radius: 16px;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.card-wrapper {
+  cursor: pointer;
+}
+
+.card-wrapper:hover .card {
+  transform: perspective(2500px) rotateY(180deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #f78f61;
+}
