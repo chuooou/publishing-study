@@ -45,3 +45,19 @@ html, body {
     background: url(https://ybtour.co.kr/assets/main/desktop/images/ico/ico_spr.png) 0px 0px no-repeat;
     content: "";
 }
+
+.prev::before {
+    display: inline-block;
+    background: url(https://ybtour.co.kr/assets/main/desktop/images/ico/ico_spr.png) -56px -200px / 600px 600px no-repeat;
+    width: 6px;
+    height: 11px;
+    content: "";
+}
+
+.next::before {
+    display: inline-block;
+    background: url(https://ybtour.co.kr/assets/main/desktop/images/ico/ico_spr.png) -64px -200px / 600px 600px no-repeat;
+    width: 6px;
+    height: 11px;
+    content: "";
+}

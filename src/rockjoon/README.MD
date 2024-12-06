@@ -49,6 +49,9 @@ npx tailwindcss -i ./src/rockjoon/init.css -o ./src/rockjoon/output-rockjoon.css
 - a태그와 img태그는 기본적으로 inline속성
 - 하지만 a태그는 하위 요소가 block일 경우 a태그도 block이 됨.
 
+### 6. bc카드 할인 배너
+- bg-[rgb(251,226,229)]와 같이 테일윈드에서 rgb나 rgba값을 사용 할 수 있음.
+
 ## 추후 과제
 - 가상 돔으로 특수 문자 생성하기 
 - 이미지 슬라이드 애니메이션 적용
