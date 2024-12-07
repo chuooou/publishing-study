@@ -61,3 +61,35 @@ html, body {
     height: 11px;
     content: "";
 }
+
+.img-op::before {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    display: block;
+    width: 210px;
+    height: 210px;
+    transform: translate(-50%, 0px);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    content: "";
+}
+
+.gray-prev::before {
+    display: inline-block;
+    background: url(https://ybtour.co.kr/assets/main/desktop/images/ico/ico_spr.png) -32px -200px / 600px 600px no-repeat;
+    width: 6px;
+    height: 11px;
+    /*transform: translateX(-50%);*/
+    content: "";
+}
+
+.gray-next::before {
+    display: inline-block;
+    background: url(https://ybtour.co.kr/assets/main/desktop/images/ico/ico_spr.png) -24px -200px / 600px 600px no-repeat;
+    width: 6px;
+    height: 11px;
+    /*transform: translateX(-50%);*/
+    content: "";
+}
