@@ -4,15 +4,21 @@ npx tailwindcss -i ./src/rockjoon/init.css -o ./src/rockjoon/output-rockjoon.css
 ```
 
 ## 미해결 문제
-- 폰트, 폰트 굵기 설정 하는 방법
-- 검색창 노랑색 보더 설정 안되는 이유
-- 수평선 긋기
-  - border bottom으로 수평선 긋기 (안됨)
-- 자식 요소가 한 개일때도 정렬을 위해 flex를 사용하는 것이 맞는지?
+- 폰트 설정 하는 방법
 - block이 필요한 경우 div안에 span을 넣는 것이 맞는지? span에 block을 주는 것이 맞는지?
 - 인기 급상승 여행지 이미지 내부의 텍스트가 흐리게 보이는 이유?
+- 노랑풍선에서는 가상요소 이미지를 잘라서 쓰는 이유?
+
 
 ## 해결된 문제
+- 폰트 굵기 설정은 <b><em><strong> 등의 태그를 이용
+- 검색창 노랑색 보더 설정 안되는 이유 
+  - reset.css 에 border 0속성 때문. tailwind는 기본으로 reset이 포함되어 있기 때문에 추가할 필요 없음.
+- 자식 요소가 한 개일때도 정렬을 위해 flex를 사용하는 것이 맞는지?
+  - 한 개 일때도 flex를 적용하는 것이 좋다.
+  - 유연하게 정렬할 수 있기 때문
+
+## 진행하며 배운 것들
 
 ### 1. HEADER
 - **width와 mx-auto를 이용하여 중앙 정렬**하기
@@ -57,11 +63,17 @@ npx tailwindcss -i ./src/rockjoon/init.css -o ./src/rockjoon/output-rockjoon.css
 - absolute-[50%]와 같이 상대적인 위치를 지정할 때에는 상위 요소의 마진까지 길이로 포함됨.
 - 하지만 시작 지점을 지정하는 것이기 때문에 실제로 중앙에 배치되지 않는다.(중앙부터 시작이기 때문에 중앙보다 아래에 배치됨.)
 - transform -translate-y-1/2 를 주어 자식요소의 높이의 절반을 위로 올려 줘야한다.
+- 
+### 8. Yellow Series
+- grid
+
+### 9. 카드 혜택
+- 요소 내부에 더 작은 요소가 들어가고, 상하좌우 간격이 각자 달라서 flex를 쓰기 애매할 때는 padding으로 수동 조정.
+- 
+### 10. footer
+- 상위 wraper를 이용하여 길이가 서로 다른 요소들의 끝을 맞출 수 있다.
 
 ## 추후 과제
 - 가상 돔으로 특수 문자 생성하기 
 - 이미지 슬라이드 애니메이션 적용
 - nav 메뉴 호버링시 하위 메뉴 보여주기
-
-## Yellow Series
-- grid

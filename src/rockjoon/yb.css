@@ -137,3 +137,14 @@ html, body {
     transform: translateX(100%);
     content: "";
 }
+
+.mid-dot-li::before {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    display: block;
+    width: 2px;
+    height: 2px;
+    background: #999;
+    content: "";
+}
