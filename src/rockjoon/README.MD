@@ -10,6 +10,7 @@ npx tailwindcss -i ./src/rockjoon/init.css -o ./src/rockjoon/output-rockjoon.css
   - border bottom으로 수평선 긋기 (안됨)
 - 자식 요소가 한 개일때도 정렬을 위해 flex를 사용하는 것이 맞는지?
 - block이 필요한 경우 div안에 span을 넣는 것이 맞는지? span에 block을 주는 것이 맞는지?
+- 인기 급상승 여행지 이미지 내부의 텍스트가 흐리게 보이는 이유?
 
 ## 해결된 문제
 
