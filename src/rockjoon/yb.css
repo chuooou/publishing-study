@@ -103,3 +103,29 @@ html, body {
     background-color: rgba(0, 0, 0, 0.3);
     content: "";
 }
+
+.yellow-banner::before {
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid rgb(255, 199, 44);
+    border-right: 25px solid transparent;
+    content: "";
+}
+
+.yellow-banner::after {
+    position: absolute;
+    bottom: -10px;
+    display: block;
+    width: 0px;
+    height: 0px;
+    left: auto;
+    right: 0px;
+    transform: scaleX(-1);
+    border-top: 10px solid rgb(255, 199, 44);
+    border-right: 25px solid transparent;
+    content: "";
+}
