@@ -129,3 +129,11 @@ html, body {
     border-right: 25px solid transparent;
     content: "";
 }
+.gray-next-after::after {
+    display: inline-block;
+    background: url(https://ybtour.co.kr/assets/main/desktop/images/ico/ico_spr.png) -24px -200px / 600px 600px no-repeat;
+    width: 6px;
+    height: 11px;
+    transform: translateX(100%);
+    content: "";
+}
