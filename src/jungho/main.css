@@ -7,9 +7,13 @@
 
 html, body {
     font-size: 62.5%;
-    font-family: 'Pretendard-Regular', sans-serif;
+    font-family: 'pr-font-regular';
+    font-weight: 300;
 }
 
-body {
-    overflow-x: hidden;
+body{
+    font-size: 1.6rem;
+}
+h3 {
+    font-size: 3.2rem;
 }
