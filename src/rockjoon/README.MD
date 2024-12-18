@@ -11,7 +11,7 @@ npx tailwindcss -i ./src/rockjoon/init.css -o ./src/rockjoon/output-rockjoon.css
 
 
 ## 해결된 문제
-- 폰트 굵기 설정은 <b><em><strong> 등의 태그를 이용
+- 폰트 굵기 설정은 b, em, strong 등의 태그를 이용
 - 검색창 노랑색 보더 설정 안되는 이유 
   - reset.css 에 border 0속성 때문. tailwind는 기본으로 reset이 포함되어 있기 때문에 추가할 필요 없음.
 - 자식 요소가 한 개일때도 정렬을 위해 flex를 사용하는 것이 맞는지?
